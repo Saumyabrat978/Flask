@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button.btn {
+            display: block;
+           padding: 12px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 75px;
+    width: max-content;
+    width: 650px;
+}
+        
+
+        button.btn:hover {
+            background-color: #5F027C;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            table {
+                font-size: 12px;
+            }
+
+            input,
+            select {
+                font-size: 14px;
+            }
+
+           
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color:blueviolet ;">APPLY FOR MESS REFUND</h1>
+
+
+
+        <div class="form-group">
+            <label for="name" style="color:blueviolet;font-weight: bold;">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="scholar_id">Scholar ID</label>
+            <input type="text" id="scholar_id" name="scholar_id" placeholder="Enter your scholar ID">
+        </div>
+
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="phone_number">Mobile Number</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number">
+        </div>
+
+        
+        <div class="form-group">
+            <label for="hostel" style="color:blueviolet;font-weight: bold;">Hostel</label>
+            <select id="hostel" name="hostel">
+                <option value="">--Select your hostel--</option>
+                <option value="Hostel A">BH 1</option>
+                <option value="Hostel B">BH 2</option>
+                <option value="Hostel C">BH 3</option>
+                <option value="Hostel C">BH 4</option>
+                <option value="Hostel C">BH 5</option>
+                <option value="Hostel C">BH 6</option>
+                <option value="Hostel C">BH 7</option>
+                <option value="Hostel C">BH 8</option>
+                <option value="Hostel C">BH 9</option>
+                <option value="Hostel C">PGH</option>
+                <option value="Hostel C">GH 1</option>
+                <option value="Hostel C">GH 2</option>
+                <option value="Hostel C">GH 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="program" style="color:blueviolet;font-weight: bold;">Program</label>
+            <input type="text" id="program" name="program" placeholder="Enter your program">
+        </div>
+
+        <div class="form-group">
+            <label for="branch" style="color:blueviolet;font-weight: bold;">Branch</label>
+            <input type="text" id="branch" name="branch" placeholder="Enter your Branch">
+            
+        </div>
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="account">SBI Acc Number</label>
+            <input type="acc" id="ACC1" name="ACC1" placeholder="Enter your account number">
+        </div>
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="account"> Account Holder Name</label>
+            <input type="acc" id="ACC2" name="ACC2" placeholder="Enter Account Holder Name">
+        </div>
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="account">SBI Acc Number</label>
+            <input type="acc" id="ACC3" name="ACC3" placeholder="Enter your account number">
+        </div>
+        <div class="form-group" style="color:blueviolet;font-weight: bold;">
+            <label for="account">IFSC Code</label>
+            <input type="acc" id="ACC4" name="ACC4" placeholder="Enter IFSC code">
+        </div>
+        <button class="btn" onclick="submitForm()" style="font-weight: bold;">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var scholar_id = document.getElementById("scholar_id").value;
+            var phone_number = document.getElementById("phone_number").value;
+            var ACC1 = document.getElementById("ACC1").value;
+            var ACC2 = document.getElementById("ACC2").value;
+            var ACC3 = document.getElementById("ACC3").value;
+            var ACC4 = document.getElementById("ACC4").value;
+            var hostel = document.getElementById("hostel").value;
+            var program = document.getElementById("program").value;
+            var branch = document.getElementById("branch").value;
+
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("email").innerHTML = email;
+            document.getElementById("scholar_id").innerHTML = scholar_id;
+            document.getElementById("phone_number").innerHTML = phone_number;
+            document.getElementById("ACC1").innerHTML = ACC1;
+            document.getElementById("ACC2").innerHTML = ACC2;
+            document.getElementById("ACC3").innerHTML = ACC3;
+            document.getElementById("ACC4").innerHTML = ACC4;
+            document.getElementById("hostel").innerHTML = hostel;
+            document.getElementById("program").innerHTML = program;
+            document.getElementById("branch").innerHTML = branch;
+        }
+    </script>
+</body>
+
+</html>

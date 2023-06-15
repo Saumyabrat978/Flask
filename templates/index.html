@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Messmate - Home</title>
+	<link rel="stylesheet" type="text/css" href="D:\messmate\static\index.css">
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/index.css') }}">
+<body>
+    <nav class="navbar">
+        <h1 class="logo">MessMate</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">contact</a></li>
+            <li class="ctn2"><a href="home">Login</a></li>
+        </ul>
+        <img src="{{ url_for( 'static', filename='menu-btn.png') }}" alt="####" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Hygenic Food</h2>
+            <div class="line"></div>
+            <h1>BE HEALTHY FOREVER</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Updates</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{ url_for( 'static', filename='img1.png') }}" alt="**">
+                <h4>New Mess Hall</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur doloribus recusandae, corporis rerum vitae!</p>
+                <a href="#" class="ctn2">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="{{ url_for( 'static', filename='img1.png') }}" alt="**">
+                <h4>New Mess Hall</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur doloribus recusandae, corporis rerum vitae!</p>
+                <a href="#" class="ctn2">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE MORE</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a cumque consequuntur blanditiis veniam! Nam quaerat illum nesciunt obcaecati! Dolores incidunt harum temporibus ut impedit!</p>
+            <a href="#" class="ctn2">Learn More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Programs</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae corrupti possimus optio provident sunt suscipit, non saepe, laborum et repellendus ullam sed nihil assumenda dolore facilis corporis odit repellat!</p>
+                <a href="#" class="ctn2">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="{{ url_for( 'static', filename='img1.png') }}" alt="">
+                    <img src="{{ url_for( 'static', filename='img2.png') }}" alt="">
+                    <img src="{{ url_for( 'static', filename='img2.png') }}" alt="">
+                    <img src="{{ url_for( 'static', filename='img1.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, ipsa rem?</p>
+        <p>copyright @ 2020 Outdoor MessMate</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links ')
+        
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
+

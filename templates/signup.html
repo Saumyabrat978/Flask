@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Messmate - Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/signup.css') }}">
+    <link rel="script" href="./signup.js">
+</head>
+<body>
+	<div class="signup-container">
+		<h1 class="logo">MessMate Signup</h1>
+		<form class="signup-form" action="createac" method="POST">
+			<div class="input-group">
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="input-group">
+				<label for="email">Email or Phone Number</label>
+				<input type="text" id="email" name="email" required>
+			</div>
+			<div class="input-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<button type="submit">Sign Up</button>
+		</form>
+		<p class="signup-link">Already have an account? <a href="login.html">Log in</a></p>
+	</div>
+</body>
+</html>
